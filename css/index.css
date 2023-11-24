@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 812px;
+    width: 375px;
+}
+
+.reel{
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.upper-nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: 10px;
+    width: 100%;
+    z-index: 10;
+}
+
+.video video{
+    margin-top: 50px;
+    /* height: 812px; */
+}
+.main-text{
+    position: relative;
+}
+.text{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+.text p{
+    font-size: 13px;
+}
+.reaction-btn{
+    position: relative;
+}
+.reaction{
+    position: absolute;
+    right: 20px;
+    bottom: 7em;
+}
+.fa-heart{
+    color: white;
+}
+.footer-nav{
+    background-color: white;
+    padding: 10px 0 25px 0;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-bottom: 25px; */
+}
+
+.bm1{
+    color: white;
+}
+
+#dialog{
+    position: fixed;
+    z-index: 100;
+    bottom: 70px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.bookmark-noti{
+    display: none;
+}
+.more{
+    font-size: 12px;
+}
+
+#bookmark-count{
+    position: relative;
+}
+#bookmark-count-no{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: orange;
+    /* display: none; */
+}
