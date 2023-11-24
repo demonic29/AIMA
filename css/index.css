@@ -22,11 +22,20 @@ body{
     display: flex;
     justify-content: space-between;
     position: fixed;
+    align-items: center;
     margin-top: 10px;
     width: 100%;
     z-index: 10;
 }
 
+::placeholder{
+    text-align: center;
+    font-size: 12px;
+}
+
+.shop-search input {
+    border: 1px solid black;
+}
 .video video{
     margin-top: 50px;
     /* height: 812px; */
@@ -98,3 +107,4 @@ body{
     color: orange;
     /* display: none; */
 }
+
