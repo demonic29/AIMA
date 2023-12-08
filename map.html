@@ -1,111 +1,121 @@
 <!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="">
+<meta name="description" content="ここに説明文を設定">
+<title>maps</title>
+
+<!-- 公開の際必要なmeta情報 課題時はコメントでも可です -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@twitteraccount">
+<meta property="og:site_name" content="サイト名">
+<meta property="og:title" content="サイトタイトル">
+<meta property="og:description" content="サイト説明文">
+<meta property="og:url" content="https://hoge.ecc.com/">
+<meta property="og:image" content="https://hoge.ecc.com/ogp.png">
+<meta property="og:type" content="website">
+<link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
+
+<!-- ページのスタイルはheadの最後に記載 -->
+<link rel="stylesheet" href="css/map.css">
+<link rel="stylesheet" href="css/ressv112.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map </title>
+    <title>MAPS</title>
 </head>
-
-<style>
-    #map{
-        height: 100%;
-    }
-</style>
 <body>
+    <main>
+        <div class="content-container">
+            <section>
+                <div class="map">
+                    <i class="material-symbols-outlined search">search</i>
+
+                    <form action="">
+                        <input type="text" id="location" name="大阪市" placeholder="入力">
+                    </form>  
+
+                    <span class="material-symbols-outlined pin1">location_on</span>
+                    <span class="material-symbols-outlined pin2">location_on</span>
+                    <span class="material-symbols-outlined pin3">location_on</span>
+
+
+                </div>
+            </section>
+
+
     
-    <div id="map"></div>
-    <script src="js/index.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&region=region_subtag" defer></script>
+            <section class="map-information">
 
-    <script>
-        let map = document.getElementById("map")
-        let currentPosition = window.navigator.geolocation.getCurrentPosition
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/Rectangle 1536.png" alt="" class="thumbnail">
+                        </div>
 
-        console.log(currentPosition())
-    </script>
+                        <div class="col-8">
+                            <h2><span class="number">1</span> 大阪</h2>
+                            <p>
+                                大阪府大阪市北区梅田３丁目１－３
+                                JR大阪駅からすぐ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="map-information">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/Rectangle 1536.png" alt="" class="thumbnail">
+                        </div>
+
+                        <div class="col-8">
+                            <h2><span class="number">2</span> 大阪</h2>
+                            <p>
+                                大阪府大阪市北区梅田３丁目１－３
+                                JR大阪駅からすぐ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="map-information">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/Rectangle 1536.png" alt="" class="thumbnail">
+                        </div>
+
+                        <div class="col-8">
+                            <h2><span class="number">3</span> 大阪</h2>
+                            <p>
+                                大阪府大阪市北区梅田３丁目１－３
+                                JR大阪駅からすぐ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+    
+
+        </div>
+    </main>
 </body>
 </html>
-
-
-
-
-<!-- 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Info Windows</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script>
-      
-      function initMap() {
-        const uluru = { lat: 34.854384, lng: 135.253236 };
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: uluru,
-        });
-        const contentString =
-          '<div id="content">' +
-          '<div id="siteNotice">' +
-          "</div>" +
-          '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-          '<div id="bodyContent">' +
-          "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-          "sandstone rock formation in the southern part of the " +
-          "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
-          "south west of the nearest large town, Alice Springs; 450&#160;km " +
-          "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
-          "features of the Uluru - Kata Tjuta National Park. Uluru is " +
-          "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
-          "Aboriginal people of the area. It has many springs, waterholes, " +
-          "rock caves and ancient paintings. Uluru is listed as a World " +
-          "Heritage Site.</p>" +
-          '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-          "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-          "(last visited June 22, 2009).</p>" +
-          "</div>" +
-          "</div>";
-        const infowindow = new google.maps.InfoWindow({
-          content: contentString,
-          ariaLabel: "Uluru",
-        });
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map,
-          title: "Uluru (Ayers Rock)",
-        });
-
-        marker.addListener("click", () => {
-          infowindow.open({
-            anchor: marker,
-            map,
-          });
-        });
-      }
-
-      window.initMap = initMap;
-    </script>
-    <style>
-  
-      #map {
-        height: 100%;
-      }
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
-      defer
-    ></script>
-    <script src="js/index.js"></script>
-  </body>
-</html>
-     -->
-
-

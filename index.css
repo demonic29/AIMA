@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppin", sans-serif;
+}
+
+body{
+    width: 390px;
+    height: auto;
+}
+.main{
+    display: flex;
+}
+.m1{
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 3px;
+}
+.img img{
+    width: 150px;
+    height: 150px;
+}
+.text p{
+    font-size: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.see{
+    text-decoration: none;
+    color: #000000;
+    font-size: 8px;
+    border: 1px solid #000000;
+    padding: 3px 15px;
+    border-radius: 3px;
+}
