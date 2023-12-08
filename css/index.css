@@ -13,6 +13,10 @@ body{
     width: 375px;
 }
 
+#map{
+    height: 100%;
+}
+
 .reel{
     width: 100vw;
     /* height: 100vh; */
