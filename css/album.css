@@ -11,31 +11,15 @@
     /* padding-top: 2vh; */
 }
 
-/* .descContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-} */
+
 .image-contents{
     overflow: auto;
 }
 
-.desc{
-    /* line-height: 100px; */
-}
 .desc .date{
     font-size: 10px;
 }
-/* .desc p::before{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    border: solid #000 2px;
-} */
+
 .date-next{
     margin-top: -10px;
     margin-bottom: 10px;
